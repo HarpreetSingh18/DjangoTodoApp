@@ -13,7 +13,7 @@ CREATE DATABASE testdb;
 ### 2. Create a new user in the MySQL database engine
 CREATE USER 'user123'@'%' IDENTIFIED WITH mysql_native_password BY '123';
 
-### 3. Grant complete access on database "testdb" to user "newuser"
+### 3. Grant complete access on database "testdb" to user "user123"
 GRANT ALL ON testdb.* TO 'user123'@'%';
 
 ### 4. Flush the privileges to refresh the MySQL database so that you can use a newly created user
