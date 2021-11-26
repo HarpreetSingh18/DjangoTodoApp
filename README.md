@@ -8,7 +8,7 @@
 ### <em>I'm assuming that MySQL is installed and is connected with Django app using mysqlclient</em>
 
 ### 1. Create a new database in the MySQL database engine.
-create database testdb;
+CREATE DATABASE testdb;
 
 ### 2. Create a new user in the MySQL database engine
 CREATE USER 'user123'@'%' IDENTIFIED WITH mysql_native_password BY '123';
@@ -32,7 +32,7 @@ DATABASES = {<br/>
 }<br/>
 
 ### 6. Migrate so that all the required tables of this app will be created in testdb database. It executes SQL commands
-Python manage.py migrate
+python manage.py migrate
 
 ### 7. Finally, run this application
-Python manage.py runserver
+python manage.py runserver
